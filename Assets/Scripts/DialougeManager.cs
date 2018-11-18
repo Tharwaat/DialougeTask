@@ -8,16 +8,19 @@ using UnityEngine.UI;
 public class DialougeManager : MonoBehaviour {
 
 	//These attributes for showing the texts on the UI components
-	public Text NameText; 
-	public Text DialougeText;
+	public Text NameText;
+	public Text	DialougeText;
+	public Text ReplyOne;
+	public Text ReplyTwo;
+	
 
 	// Use this for initialization
 	void Start () {}
 
 	// This function starts the dialouge
 	public void StartDialouge(Dialouge dialouge){
-		NameText.text = dialouge.name;	
-		ShowNode(dialouge.DialougeRootNode);		
+		NameText.text = dialouge.name;
+		ShowNode(dialouge.DialougeTreeNodes[0]);		
 	}
 
 	// public void GetNextSentence(TextNode node){
@@ -33,12 +36,13 @@ public class DialougeManager : MonoBehaviour {
 		Debug.Log("End of a Converstaion!.");
 	}
 
-	public void ShowNode(TextNode node){
-		Debug.Log(node.SentenceText);
-		//DialougeText.text = node.SentenceText;
-		foreach (TextNode reply in node.replies){
-			//Debug.Log(reply.SentenceText);
-			ShowNode(reply);
-		}
+	public void ShowNode(DialougeNode node){
+		DialougeText.text = node.SentenceText;
+		ReplyOne.text = node.replies[0].SentenceText;
+		ReplyTwo.text = node.replies[1].SentenceText;
+	}
+
+	public void NavigateToNode(int index){
+		
 	}
 }

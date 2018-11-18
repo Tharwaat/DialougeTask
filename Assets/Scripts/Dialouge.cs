@@ -11,5 +11,5 @@ using UnityEngine;
 public class Dialouge{
 
 	public string name; // NPC name
-	public TextNode DialougeRootNode; // Root of the dialouge tree
+	public DialougeNode[] DialougeTreeNodes; // Root of the dialouge tree
 }

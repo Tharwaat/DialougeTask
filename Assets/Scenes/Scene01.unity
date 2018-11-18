@@ -395,10 +395,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_FontSize: 18
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -526,10 +526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Tharwat
-    sentences:
-    - Hello dude!
-    - Welcome to World of War Craft!
-    - Now, you're a knight of mordor!.
+    DialougeRootNode:
+      SentenceText: 
+      replies: []
 --- !u!114 &1424237122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,8 +646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -10.4}
-  m_SizeDelta: {x: 383.9, y: 64}
+  m_AnchoredPosition: {x: 3.599, y: -5.825}
+  m_SizeDelta: {x: 538.6, y: 91.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457080823
 MonoBehaviour:
@@ -858,8 +857,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95.1, y: 41.6}
-  m_SizeDelta: {x: 190.3, y: 40.1}
+  m_AnchoredPosition: {x: 3.6, y: 73.4}
+  m_SizeDelta: {x: 538.6, y: 40.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631685230
 MonoBehaviour:
@@ -882,7 +881,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -934,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 135, y: -66.8}
+  m_AnchoredPosition: {x: 212, y: -103}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727055590

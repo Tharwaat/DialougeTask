@@ -10,9 +10,9 @@ using UnityEngine.UI;
 
 
 [System.Serializable]
-public class TextNode{
+public class DialougeNode{
 
-	[TextArea(2,6)]
+	[TextArea(2,4)]
 	public string SentenceText;
-	public TextNode[] replies;
+	public Reply[] replies;
 }
