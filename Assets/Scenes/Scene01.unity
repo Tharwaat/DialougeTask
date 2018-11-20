@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 601561152}
   - component: {fileID: 601561151}
   - component: {fileID: 601561150}
+  - component: {fileID: 601561154}
   m_Layer: 5
   m_Name: ActionTwo
   m_TagString: Untagged
@@ -264,7 +265,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1525735340}
-        m_MethodName: GetNextSentence
+        m_MethodName: onClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -309,6 +310,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 601561148}
+--- !u!114 &601561154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601561148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb43ed54d053bc46acdb7d32931a7d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeIndex: 0
 --- !u!1 &675903549
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,9 +740,25 @@ MonoBehaviour:
     - SentenceText: Sentence one
       replies:
       - SentenceText: Reply one!
-        link: 0
+        Nodelink: 1
       - SentenceText: Reply two!
-        link: 0
+        Nodelink: 2
+    - SentenceText: Sentence Two
+      replies:
+      - SentenceText: Reply one Two!
+        Nodelink: 2
+      - SentenceText: Reply two Two!
+        Nodelink: 1
+    - SentenceText: Sentence Three
+      replies:
+      - SentenceText: Reply one Three!
+        Nodelink: 3
+      - SentenceText: Reply two Three!
+        Nodelink: 3
+    - SentenceText: Sentence Four
+      replies:
+      - SentenceText: End Reply
+        Nodelink: 0
 --- !u!114 &1424237122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +949,8 @@ MonoBehaviour:
   DialougeText: {fileID: 1457080823}
   ReplyOne: {fileID: 356228952}
   ReplyTwo: {fileID: 991038349}
+  ActionOne: {fileID: 1727055590}
+  ActionTwo: {fileID: 601561150}
 --- !u!4 &1525735341
 Transform:
   m_ObjectHideFlags: 0
@@ -1113,6 +1144,7 @@ GameObject:
   - component: {fileID: 1727055592}
   - component: {fileID: 1727055591}
   - component: {fileID: 1727055590}
+  - component: {fileID: 1727055593}
   m_Layer: 5
   m_Name: ActionOne
   m_TagString: Untagged
@@ -1179,7 +1211,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1525735340}
-        m_MethodName: GetNextSentence
+        m_MethodName: onClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1224,3 +1256,15 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1727055588}
+--- !u!114 &1727055593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727055588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb43ed54d053bc46acdb7d32931a7d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeIndex: 0
