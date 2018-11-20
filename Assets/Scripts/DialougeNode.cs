@@ -1,7 +1,7 @@
 ﻿/*
 	A dialouge tree is a set of nodes, each node has a sentence that
-	the dialouger said, and a set of replies, that each reply is 
-	a node itself.
+	the dialouger said, and a set of replies, that each reply has 
+	it's own text, and an index that referes to other node.
  */
 using System.Collections;
 using System.Collections.Generic;
